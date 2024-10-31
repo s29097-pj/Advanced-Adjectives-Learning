@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nauka słówek</title>
+    <link rel="stylesheet" href="css/styles.css">  <!-- link do pliku css -->
+</head>
+<body>
+<div class="container">
+    <h3>Advanced adjectives</h3>
+    <div id="quiz">
+        <p id="polish-word"></p>
+        <label for="synonym-answer"></label><input type="text" id="synonym-answer" placeholder="Wpisz synonim angielski" onkeydown="checkEnter(event)">
+        <button onclick="checkAnswer()">Sprawdź</button>
+        <p class="feedback" id="feedback"></p>
+        <p class="feedback" id="hint"></p>
+        <div id="options"></div> <!-- Dodany kontener na opcje -->
+    </div>
+    <button onclick="repeatMistakes()" style="display:none;" id="repeat-btn">Powtórz błędne odpowiedzi</button>
+</div>
+<script src="js/script.js"></script> <!-- link do pliku JS -->
+</body>
+</html>
